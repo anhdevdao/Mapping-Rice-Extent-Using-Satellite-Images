@@ -1,3 +1,15 @@
+PHÂN LỚP LÚA TẠI ĐỒNG BẰNG SÔNG HỒNG SỬ DỤNG CÁC THUẬT TOÁN HỌC MÁY
+
+  1. Tổng quan
+  2. Khái niệm
+    2.1 Chỉ số NDVI (Normalized Difference Vegetation Index):
+      Dùng để định lượng thảm thực vật bằng cách tính toán độ chênh lệch giữa 2 loại tia hồng ngoại (thực vật phản xạ mạnh) và tia sáng đỏ (thực vật hấp thụ)
+      Chỉ số NDVI dao động từ -1 đến +1. Khác nhau với từng loại đất
+      Ví dụ: Khi ta có chỉ số âm, đó khả năng cao là Nước. Ngược lại, khi ta có chỉ số NDVI gần bằng +!, đó khả năng cao là sự dày đặc các mặt của lá cây xanh. Nhưng khi NDVI xấp xỉ 0, đó không phải là lá cây mà có thể là khu vực dân cư.
+      
+      NDVI = (NIR - RED) / (NIR + RED)
+
+
 Map Paddy rice planting area base on classification algorithms and data sources:
   + Using 2 ways: optical- and microwave-based remote sensed data.
     In classification:  Divide into unsupervised classification and supervised classificastion methods. Knowledge- and phenology-based approaches are methods in supervised classificaion.
