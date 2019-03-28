@@ -85,14 +85,53 @@ var ndviParams = {min: -1, max: 1, palette: ['blue', 'white', 'green']};
 // Map.addLayer(ndvi2, ndviParams, 'NDVI image');
 // Map.addLayer(ndvi3, ndviParams, 'NDVI image');
 // Map.addLayer(ndvi4, ndviParams, 'NDVI image');
+var visualization1 = ndvi1.visualize({
+  palette: ['blue', 'white', 'green'],
+  min: -1,
+  max: 1
+});
+var visualization2 = ndvi2.visualize({
+  palette: ['blue', 'white', 'green'],
+  min: -1,
+  max: 1
+});
+var visualization3 = ndvi3.visualize({
+  palette: ['blue', 'white', 'green'],
+  min: -1,
+  max: 1
+});
+var visualization4 = ndvi4.visualize({
+  palette: ['blue', 'white', 'green'],
+  min: -1,
+  max: 1
+});
 
-
-// Xuat ra Google Drive
+// Xuat ra GoogleDrive
 Export.image.toDrive({
   image: ndvi1,
   description: 'Greenest_pixel_composite',
   scale: 30
 });
+Export.image.toDrive({
+  image: ndvi2,
+  description: 'Greenest_pixel_composite',
+  scale: 30
+});
+Export.image.toDrive({
+  image: ndvi3,
+  description: 'Greenest_pixel_composite',
+  scale: 30
+});
+Export.image.toDrive({
+  image: ndvi4,
+  description: 'Greenest_pixel_composite',
+  scale: 30
+});
+
+
+
+
+
 
 
 
