@@ -32,3 +32,11 @@ Map Paddy rice planting area base on classification algorithms and data sources:
           4. The backscattering coefficient (in dB) was acquired from the orthorectified σ◦ band according to the equation 10×log10(σ◦) *** MORE ***
           5. A median filter with a window size of 5×5 pixels was utilized toremove speckle noises *** MORE ***
  
+	+Landsat-8:
+	  Pre-processing: 
+		  1. The images were calibrated to at-sensor radiance images, then corrected to surface reflectance images using the Fast Line-of-sight Atmospheric Analysis of Hypercuble (FLAASH) on ENVI software.
+		  2. Geometric pixel-to-pixl precision correction was implement based on S1A data using the georeferencing model of ArcGiS software
+		  3. Done with all images were cropped
+		  
+  *** The error matrix of estimated area proportion ***:
+	
